@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: orange;
+}
+
+a:active {
+  color: black;
+}
+
+#maingrid {
+	margin: 0 auto;
+  max-width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 100px auto auto 25px;
+  grid-template-areas: 	"header header header"
+										    "introbilde introbilde introtext"
+										    "artikkel artikkel artikkel"
+										    "footer footer footer";
+}
+
+header {
+  grid-area: header;
+}
+
+header h1 {
+  margin-top: 30px;
+  letter-spacing: 25px;
+  margin-left: 50px;
+  font-family: 'Raleway', sans-serif;
+}
+
+#to {
+  color: orange;
+}
+
+nav {
+  float: right;
+  margin-top: -60px;
+  margin-right: 50px;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  float: left;
+  margin-left: 30px;
+}
+
+nav ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover {
+  border-top: solid orange 2px;
+  padding-top: 43px;
+}
+
+.contentImg img{
+  grid-area: introbilde;
+  margin-top: -2px;
+  width: 800px;
+  height: 500px;
+}
+
+.introtext {
+  margin-top: 40px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin-left: 40px;
+}
+
+/*.introtext h3 a {
+  text-decoration: none;
+  color: black;
+}
+
+.introtext h3 a:hover {
+  color: orange;
+}
+
+.introtext h3 a:active {
+  color: black;
+}
+*/
+.introtext p {
+  width: 400px;
+  text-align: center;
+  line-height: 28px;
+}
+
+#bilde_introtext {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+#innhold {
+  grid-area: artikkel;
+  display: flex;
+	justify-content: space-between;
+}
+
+#innhold img {
+  width: 350px;
+  height: 250px;
+}
+
+.artikkel {
+  grid-area: artikkel;
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+  line-height: 28px;
+  text-align: center;
+  margin: 25px;
+  border-bottom: solid 2px lightgrey;
+}
+
+.artikkel p {
+  text-align: left;
+  margin-left: 20px;
+}
+
+footer {
+  grid-area: footer;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+footer p a{
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+footer p a:hover{
+  color: orange;
+}
