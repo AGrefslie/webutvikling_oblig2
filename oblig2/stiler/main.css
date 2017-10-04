@@ -86,6 +86,12 @@ nav ul li a:hover {
   margin-left: 40px;
 }
 
+.introtext ul li {
+  list-style: none;
+  line-height: 60px;
+  margin-right: 40px;
+}
+
 .introtext p {
   width: 400px;
   text-align: center;
