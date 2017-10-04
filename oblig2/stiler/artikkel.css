@@ -129,6 +129,10 @@ table th{
   text-decoration: underline;
 }
 
+#kraken {
+  margin:0 auto;
+}
+
 footer {
   grid-area: footer;
   font-family: 'Raleway', sans-serif;
